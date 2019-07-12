@@ -75,6 +75,9 @@
 
 	                @endforelse
 	            </ul>
+	            @if($users)
+	            	{{ $users->appends( request()->query() )->links() }}
+	            @endif
 	        </div>
 		</div>
 </div>
