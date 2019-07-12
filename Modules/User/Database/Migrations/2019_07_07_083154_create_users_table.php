@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration {
 			$table->string('full_name');
 			$table->integer('level');
 			$table->string('email')->unique();
+			$table->enum('status', ['success', 'fail'])->nullable();
 			$table->string('image')->default('default.png');
 			$table->string('password');
 			$table->string('remember_token')->nullable();

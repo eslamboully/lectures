@@ -1,0 +1,1 @@
+{{ trans('user::user.' . $status) }}

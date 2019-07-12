@@ -16,6 +16,7 @@ class UserStoreFormRequest extends FormRequest {
 			'email' => 'required|email|unique:users,email',
 			'password' => 'required|min:5',
 			'image' => 'sometimes|nullable|image',
+			'status' => 'sometimes|nullable',
 		];
 	}
 

@@ -53,6 +53,15 @@
                         </select>
                     </div>
 
+                    <div class="form-group">
+                        <label>@lang('user::user.status')</label>
+                        <select class="form-control" name="status">
+                            <option value=""></option>
+                            <option value="fail">@lang('user::user.fail')</option>
+                            <option value="success">@lang('user::user.success')</option>
+                        </select>
+                    </div>
+
                   <div class="form-group">
                     {!! Form::label('image' ,  trans('admin::admin.image') ) !!}
                     {!! Form::file('image' , ['id' => 'image' , 'class' => 'form-control'] ) !!}

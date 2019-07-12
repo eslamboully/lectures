@@ -10,4 +10,8 @@ return [
 	'user' => 'User',
 	'logged_success' => 'Login Successfully',
 
+	'status' => 'Status',
+	'success' => 'Success',
+	'fail' => 'Fail',
+
 ];

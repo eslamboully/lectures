@@ -16,6 +16,7 @@ class UserUpdateFormRequest extends FormRequest {
 			'email' => 'required|email|unique:users,email,' . request('id'),
 			'password' => 'sometimes|nullable|min:5',
 			'image' => 'sometimes|nullable|image',
+			'status' => 'sometimes|nullable',
 		];
 	}
 

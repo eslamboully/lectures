@@ -15,11 +15,12 @@ class UserDatatable extends DataTable {
 	 */
 	public function dataTable($query) {
 		return datatables($query)
-            ->addColumn('checkbox', 'admin::datatables.btn.checkbox')
+			->addColumn('checkbox', 'admin::datatables.btn.checkbox')
 			->addColumn('control', 'user::datatables.control')
 			->addColumn('image', 'user::datatables.image')
 			->addColumn('level', 'user::datatables.level')
-			->rawColumns(['level','control', 'image','checkbox']);
+			->addColumn('status', 'user::datatables.status')
+			->rawColumns(['level', 'control', 'image', 'checkbox', 'status']);
 	}
 
 	/**
@@ -42,39 +43,39 @@ class UserDatatable extends DataTable {
 			->columns($this->getColumns())
 			->minifiedAjax()
 			->parameters([
-                'dom' => 'Blfrtip',
-                'lengthMenu' => [[10, 25, 50, 100, -1], [10, 25, 50, 100, trans('adminpanel::adminpanel.all')]],
-                'buttons' => [
-                    $permission = auth()->guard('admin')->user()->can('add_users') ?
-                        [
-                            'text' => trans('adminpanel::adminpanel.add'),
-                            'className' => 'btn btn-info',
-                            'action' => "function(){
+				'dom' => 'Blfrtip',
+				'lengthMenu' => [[10, 25, 50, 100, -1], [10, 25, 50, 100, trans('adminpanel::adminpanel.all')]],
+				'buttons' => [
+					$permission = auth()->guard('admin')->user()->can('add_users') ?
+					[
+						'text' => trans('adminpanel::adminpanel.add'),
+						'className' => 'btn btn-info',
+						'action' => "function(){
                                     window.location.href ='" . URL::Current() . "/create';
                                 }",
-                        ] : [
-                            'text' => trans('adminpanel::adminpanel.add'),
-                            'className' => 'btn btn-info disabled',
-                        ],
-                    [
-                        'extend'=>'export','text'=>'<i class="fa fa-file-archive-o"></i>'.__('admin::admin.export'),'className'=>'btn btn-primary','init' => 'function(api, node, config) {$(node).removeClass("dt-button")}'
-                    ],
-                    [
-                        'extend'=>'print','text'=>'<i class="fa fa-print"></i>'.__('admin::admin.print'),'className'=>'btn btn-success','init' => 'function(api, node, config) {$(node).removeClass("dt-button")}'
-                    ],
-                    [
-                        'extend'=>'reset','text'=>'<i class="fa fa-refresh"></i>','className'=>'btn btn-info','init' => 'function(api, node, config) {$(node).removeClass("dt-button")}'
-                    ],
-                    $permission = auth()->guard('admin')->user()->can('delete_users') ?
-                        [
-                            'text'=>'<i class="fa fa-trash-o"></i>'.__('admin::admin.delete_all'),'className'=>'btn btn-danger delBtn','init' => 'function(api, node, config) {$(node).removeClass("dt-button")}'
-                        ] :
-                        [
-                            'text'=>'<i class="fa fa-trash-o"></i>'.__('admin::admin.delete_all'),'className'=>'btn btn-danger disabled','init' => 'function(api, node, config) {$(node).removeClass("dt-button")}'
-                        ],
-                ],
-                'language' => yajra_lang(),
-            ]);
+					] : [
+						'text' => trans('adminpanel::adminpanel.add'),
+						'className' => 'btn btn-info disabled',
+					],
+					[
+						'extend' => 'export', 'text' => '<i class="fa fa-file-archive-o"></i>' . __('admin::admin.export'), 'className' => 'btn btn-primary', 'init' => 'function(api, node, config) {$(node).removeClass("dt-button")}',
+					],
+					[
+						'extend' => 'print', 'text' => '<i class="fa fa-print"></i>' . __('admin::admin.print'), 'className' => 'btn btn-success', 'init' => 'function(api, node, config) {$(node).removeClass("dt-button")}',
+					],
+					[
+						'extend' => 'reset', 'text' => '<i class="fa fa-refresh"></i>', 'className' => 'btn btn-info', 'init' => 'function(api, node, config) {$(node).removeClass("dt-button")}',
+					],
+					$permission = auth()->guard('admin')->user()->can('delete_users') ?
+					[
+						'text' => '<i class="fa fa-trash-o"></i>' . __('admin::admin.delete_all'), 'className' => 'btn btn-danger delBtn', 'init' => 'function(api, node, config) {$(node).removeClass("dt-button")}',
+					] :
+					[
+						'text' => '<i class="fa fa-trash-o"></i>' . __('admin::admin.delete_all'), 'className' => 'btn btn-danger disabled', 'init' => 'function(api, node, config) {$(node).removeClass("dt-button")}',
+					],
+				],
+				'language' => yajra_lang(),
+			]);
 	}
 
 	/**
@@ -84,15 +85,15 @@ class UserDatatable extends DataTable {
 	 */
 	protected function getColumns() {
 		return [
-            [
-                'name'=>'checkbox',
-                'data'=>'checkbox',
-                'title'=>'<input type="checkbox" name="check_all" class="form-check check_all">',
-                'sortable'=>false,
-                'printable'=>false,
-                'exportable'=>false,
-                'orderable'=>false,
-            ],
+			[
+				'name' => 'checkbox',
+				'data' => 'checkbox',
+				'title' => '<input type="checkbox" name="check_all" class="form-check check_all">',
+				'sortable' => false,
+				'printable' => false,
+				'exportable' => false,
+				'orderable' => false,
+			],
 			[
 				'name' => 'id',
 				'data' => 'id',
@@ -116,11 +117,19 @@ class UserDatatable extends DataTable {
 				'searchable' => false,
 				'orderable' => false,
 			],
-            [
-                'name' => 'level',
-                'data' => 'level',
-                'title' => trans('levels::level.level'),
-            ],
+			[
+				'name' => 'status',
+				'data' => 'status',
+				'title' => trans('user::user.status'),
+				'printable' => false,
+				'searchable' => false,
+				'orderable' => false,
+			],
+			[
+				'name' => 'level',
+				'data' => 'level',
+				'title' => trans('levels::level.level'),
+			],
 
 			[
 				'name' => 'control',

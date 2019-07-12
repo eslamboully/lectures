@@ -51,6 +51,17 @@
                     </select>
                 </div>
 
+                <div class="form-group">
+                    <label>@lang('user::user.status')</label>
+                    <select class="form-control" name="status">
+
+                        <option {{ $user->status == '' ? 'selected' : '' }} value=""></option>
+                        <option {{ $user->status == 'fail' ? 'selected' : '' }} value="fail">@lang('user::user.fail')</option>
+                        <option {{ $user->status == 'success' ? 'selected' : '' }}value="success">@lang('user::user.success')</option>
+
+                    </select>
+                </div>
+
               <div class="form-group">
                 {!! Form::label('image' ,  trans('user::user.image') ) !!}
                 {!! Form::file('image' , ['id' => 'image' , 'class' => 'form-control'] ) !!}
