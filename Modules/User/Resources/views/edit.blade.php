@@ -37,17 +37,17 @@
               </div>
 
                 <div class="form-group">
-                    <label>@lang('levels::level.level')</label>
+                    <label>@lang('user::user.level')</label>
                     <select class="form-control" name="level">
-                        <option {{ $user->level == 1 ? 'selected' : '' }} value="1">@lang('levels::level.level_one')</option>
-                        <option {{ $user->level == 2 ? 'selected' : '' }} value="2">@lang('levels::level.level_two')</option>
-                        <option {{ $user->level == 3 ? 'selected' : '' }} value="3">@lang('levels::level.level_three')</option>
-                        <option {{ $user->level == 4 ? 'selected' : '' }} value="4">@lang('levels::level.level_four')</option>
-                        <option {{ $user->level == 5 ? 'selected' : '' }} value="5">@lang('levels::level.level_five')</option>
-                        <option {{ $user->level == 6 ? 'selected' : '' }} value="6">@lang('levels::level.level_six')</option>
-                        <option {{ $user->level == 7 ? 'selected' : '' }} value="7">@lang('levels::level.level_seven')</option>
-                        <option {{ $user->level == 8 ? 'selected' : '' }} value="8">@lang('levels::level.level_eight')</option>
-                        <option {{ $user->level == 9 ? 'selected' : '' }} value="9">@lang('levels::level.level_nine')</option>
+                        <option {{ $user->level == 1 ? 'selected' : '' }} value="1">One</option>
+                        <option {{ $user->level == 2 ? 'selected' : '' }} value="2">Two</option>
+                        <option {{ $user->level == 3 ? 'selected' : '' }} value="3">Three</option>
+                        <option {{ $user->level == 4 ? 'selected' : '' }} value="4">Four</option>
+                        <option {{ $user->level == 5 ? 'selected' : '' }} value="5">Five</option>
+                        <option {{ $user->level == 6 ? 'selected' : '' }} value="6">Six</option>
+                        <option {{ $user->level == 7 ? 'selected' : '' }} value="7">Seven</option>
+                        <option {{ $user->level == 8 ? 'selected' : '' }} value="8">Eight</option>
+                        <option {{ $user->level == 9 ? 'selected' : '' }} value="9">Nine</option>
                     </select>
                 </div>
 

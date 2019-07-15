@@ -1,19 +1,19 @@
 @if($level == 1)
-    @lang('levels::level.level_one')
+    One
 @elseif($level == 2)
-    @lang('levels::level.level_two')
+    Two
 @elseif($level == 3)
-    @lang('levels::level.level_three')
+    Three
 @elseif($level == 4)
-    @lang('levels::level.level_four')
+    Four
 @elseif($level == 5)
-    @lang('levels::level.level_five')
+    Five
 @elseif($level == 6)
-    @lang('levels::level.level_six')
+    Six
 @elseif($level == 7)
-    @lang('levels::level.level_seven')
+    Seven
 @elseif($level == 8)
-    @lang('levels::level.level_eight')
+    Eight
 @elseif($level == 9)
-    @lang('levels::level.level_nine')
+    Nine
 @endif

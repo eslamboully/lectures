@@ -3,12 +3,12 @@
 @section('content')
     <section class="content-header">
         <h1 style="font-family: 'Cairo', sans-serif;">
-            @lang('admin::admin.users')
+            @lang('user::user.users')
             <small>@lang('admin::admin.control_panel')</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="{{ url('/admin') }}"><i class="fa fa-dashboard"></i> @lang('admin::admin.home')</a></li>
-            <li class="active">@lang('admin::admin.users')</li>
+            <li class="active">@lang('user::user.users')</li>
         </ol>
     </section>
 
@@ -17,7 +17,7 @@
             <div class="col-xs-12">
                 <div class="box">
         <div class="box-header">
-            <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">@lang('admin::admin.users')</h3>
+            <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">@lang('user::user.users')</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">

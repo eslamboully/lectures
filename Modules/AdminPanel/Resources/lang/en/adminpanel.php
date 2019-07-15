@@ -14,5 +14,6 @@ return [
 	'created' => 'Data Crreated Successfully',
 	'updated' => 'Data Updated Successfully',
 	'edit' => 'Edit',
+	'users' => 'Students',
 
 ];

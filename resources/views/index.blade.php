@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>App Name</title>
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
@@ -46,13 +46,33 @@
 	        <div class="span12" style="text-align: right;">
 	    		<ul class="thumbnails">
 	    			@forelse($users as $user)
-		                <li class="span5 clearfix">
-		                  <div class="thumbnail clearfix">
+		                <li class="span5 clearfix" style="float: left;margin-left: 30px;">
+		                  <div class="thumbnail clearfix" style="width: 490px;">
 		                    <img src="{{ asset('public/upload/users/default.png') }}" alt="ALT NAME" class="pull-left span2 clearfix" style='margin-right:10px'>
-		                    <div class="caption" class="pull-left">
+		                    <div class="caption" class="pull-left clearfix">
+
+
 		                      <h4>
+
+		                      	<b>@lang('user::user.full_name') : </b>
+
 		                      	<a href="#" >{{ $user->full_name }}</a>
 		                      </h4>
+
+		                      <div style="display: grid;">
+
+		                      	<b>@lang('user::user.email') : </b>
+
+		                      	<a href="#" >{{ $user->email }}</a>
+		                      </div>
+
+		                      <div>
+
+		                      	<b>@lang('user::user.level') : </b>
+
+		                      	<a href="#" >{{ $user->level }}</a>
+		                      </div>
+
 		                      <small>
 
 		                      	<b>@lang('user::user.status') : </b>

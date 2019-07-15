@@ -128,7 +128,7 @@ class UserDatatable extends DataTable {
 			[
 				'name' => 'level',
 				'data' => 'level',
-				'title' => trans('levels::level.level'),
+				'title' => trans('user::user.level'),
 			],
 
 			[
