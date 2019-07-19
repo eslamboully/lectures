@@ -34,6 +34,11 @@
                   </div>
 
                   <div class="form-group">
+                    {!! Form::label('phone' ,  trans('user::user.phone')) !!}
+                    {!! Form::text('phone' , old('phone') , ['class' => 'form-control'] ) !!}
+                  </div>
+
+                  <div class="form-group">
                     {!! Form::label('password' ,  trans('admin::admin.password') ) !!}
                     {!! Form::password('password' , ['class' => 'form-control'] ) !!}
                   </div>

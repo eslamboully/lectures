@@ -14,5 +14,6 @@ return [
 	'success' => 'Success',
 	'fail' => 'Fail',
 	'level' => 'Level',
+	'phone' => 'Phone',
 
 ];

@@ -113,6 +113,11 @@ class UserDatatable extends DataTable {
 				'name' => 'image',
 				'data' => 'image',
 				'title' => trans('admin::admin.image'),
+			],
+			[
+				'name' => 'phone',
+				'data' => 'phone',
+				'title' => trans('user::user.phone'),
 				'printable' => false,
 				'searchable' => false,
 				'orderable' => false,

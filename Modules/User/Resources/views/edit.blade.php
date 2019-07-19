@@ -36,6 +36,11 @@
                 {!! Form::email('email' , $user->email , ['class' => 'form-control'] ) !!}
               </div>
 
+                  <div class="form-group">
+                    {!! Form::label('phone' ,  trans('user::user.phone')) !!}
+                    {!! Form::text('phone' , $user->phone , ['class' => 'form-control'] ) !!}
+                  </div>
+
                 <div class="form-group">
                     <label>@lang('user::user.level')</label>
                     <select class="form-control" name="level">

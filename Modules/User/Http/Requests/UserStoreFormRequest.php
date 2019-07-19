@@ -13,6 +13,7 @@ class UserStoreFormRequest extends FormRequest {
 	public function rules() {
 		return [
 			'full_name' => 'required|min:3',
+			'phone' => 'required',
 			'email' => 'required|email|unique:users,email',
 			'password' => 'required|min:5',
 			'image' => 'sometimes|nullable|image',

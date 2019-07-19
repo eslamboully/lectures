@@ -13,6 +13,8 @@ class UserUpdateFormRequest extends FormRequest {
 	public function rules() {
 		return [
 			'full_name' => 'required|min:3',
+			'phone' => 'required',
+
 			'email' => 'required|email|unique:users,email,' . request('id'),
 			'password' => 'sometimes|nullable|min:5',
 			'image' => 'sometimes|nullable|image',
