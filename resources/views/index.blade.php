@@ -59,18 +59,18 @@
 		                      	<a href="#" >{{ $user->full_name }}</a>
 		                      </h4>
 
-		                      <div style="display: grid;">
-
-		                      	<b>@lang('user::user.email') : </b>
-
-		                      	<a href="#" >{{ $user->email }}</a>
-		                      </div>
-
 		                      <div>
 
 		                      	<b>@lang('user::user.level') : </b>
 
 		                      	<a href="#" >{{ $user->level }}</a>
+		                      </div>
+
+		                      <div>
+
+		                      	<b>@lang('user::user.phone') : </b>
+
+		                      	<a href="#" >{{ $user->phone }}</a>
 		                      </div>
 
 		                      <small>

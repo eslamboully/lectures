@@ -104,11 +104,7 @@ class UserDatatable extends DataTable {
 				'data' => 'full_name',
 				'title' => trans('admin::admin.full_name'),
 			],
-			[
-				'name' => 'email',
-				'data' => 'email',
-				'title' => trans('admin::admin.email'),
-			],
+
 			[
 				'name' => 'image',
 				'data' => 'image',

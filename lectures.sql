@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 12, 2019 at 07:10 AM
+-- Generation Time: Jul 24, 2019 at 08:28 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -47,151 +47,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
 --
 
 INSERT INTO `admins` (`id`, `full_name`, `email`, `image`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Root', 'admin@admin.com', 'default.png', '$2y$10$UmWeB8UKF2hKMs45cp6lEu2uYSLJdNR77bt/thb56T1hHuzQxVfj6', NULL, '2019-07-12 05:51:32', '2019-07-12 05:51:32');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_eights`
---
-
-DROP TABLE IF EXISTS `level_eights`;
-CREATE TABLE IF NOT EXISTS `level_eights` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_fives`
---
-
-DROP TABLE IF EXISTS `level_fives`;
-CREATE TABLE IF NOT EXISTS `level_fives` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_fours`
---
-
-DROP TABLE IF EXISTS `level_fours`;
-CREATE TABLE IF NOT EXISTS `level_fours` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_nines`
---
-
-DROP TABLE IF EXISTS `level_nines`;
-CREATE TABLE IF NOT EXISTS `level_nines` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_ones`
---
-
-DROP TABLE IF EXISTS `level_ones`;
-CREATE TABLE IF NOT EXISTS `level_ones` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_sevens`
---
-
-DROP TABLE IF EXISTS `level_sevens`;
-CREATE TABLE IF NOT EXISTS `level_sevens` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_sixes`
---
-
-DROP TABLE IF EXISTS `level_sixes`;
-CREATE TABLE IF NOT EXISTS `level_sixes` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_threes`
---
-
-DROP TABLE IF EXISTS `level_threes`;
-CREATE TABLE IF NOT EXISTS `level_threes` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level_twos`
---
-
-DROP TABLE IF EXISTS `level_twos`;
-CREATE TABLE IF NOT EXISTS `level_twos` (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+(1, 'Root', 'admin@admin.com', 'default.png', '$2y$10$5f9mWyzHaGwhT97KyVbFw.0RF39y5WhXNC8Lvh/2dg6cEyQfEiT4i', NULL, '2019-07-23 11:50:31', '2019-07-23 11:50:31');
 
 -- --------------------------------------------------------
 
@@ -205,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `migrations` (
   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `migrations`
@@ -214,16 +70,7 @@ CREATE TABLE IF NOT EXISTS `migrations` (
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2019_07_06_063251_create_admins_table', 1),
 (2, '2019_07_07_083154_create_users_table', 1),
-(3, '2019_07_08_164152_create_permission_tables', 1),
-(4, '2019_07_09_111512_create_level_ones_table', 1),
-(5, '2019_07_09_111521_create_level_twos_table', 1),
-(6, '2019_07_09_111525_create_level_threes_table', 1),
-(7, '2019_07_09_111532_create_level_fours_table', 1),
-(8, '2019_07_09_111536_create_level_fives_table', 1),
-(9, '2019_07_09_111543_create_level_sixes_table', 1),
-(10, '2019_07_09_111550_create_level_sevens_table', 1),
-(11, '2019_07_09_111558_create_level_eights_table', 1),
-(12, '2019_07_09_111603_create_level_nines_table', 1);
+(3, '2019_07_08_164152_create_permission_tables', 1);
 
 -- --------------------------------------------------------
 
@@ -283,50 +130,50 @@ CREATE TABLE IF NOT EXISTS `permissions` (
 --
 
 INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'add_admins', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(2, 'add_users', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(3, 'add_levelOne', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(4, 'add_levelTwo', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(5, 'add_levelThree', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(6, 'add_levelFour', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(7, 'add_levelFive', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(8, 'add_levelSix', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(9, 'add_levelSeven', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(10, 'add_levelEight', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(11, 'add_levelNine', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(12, 'edit_admins', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(13, 'edit_users', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(14, 'edit_levelOne', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(15, 'edit_levelTwo', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(16, 'edit_levelThree', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(17, 'edit_levelFour', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(18, 'edit_levelFive', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(19, 'edit_levelSix', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(20, 'edit_levelSeven', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(21, 'edit_levelEight', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(22, 'edit_levelNine', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(23, 'read_admins', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(24, 'read_users', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(25, 'read_levelOne', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(26, 'read_levelTwo', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(27, 'read_levelThree', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(28, 'read_levelFour', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(29, 'read_levelFive', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(30, 'read_levelSix', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(31, 'read_levelSeven', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(32, 'read_levelEight', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(33, 'read_levelNine', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(34, 'delete_admins', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(35, 'delete_users', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(36, 'delete_levelOne', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(37, 'delete_levelTwo', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(38, 'delete_levelThree', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(39, 'delete_levelFour', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(40, 'delete_levelFive', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(41, 'delete_levelSix', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(42, 'delete_levelSeven', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(43, 'delete_levelEight', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(44, 'delete_levelNine', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32');
+(1, 'add_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(2, 'add_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(3, 'add_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(4, 'add_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(5, 'add_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(6, 'add_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(7, 'add_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(8, 'add_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(9, 'add_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(10, 'add_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(11, 'add_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(12, 'edit_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(13, 'edit_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(14, 'edit_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(15, 'edit_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(16, 'edit_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(17, 'edit_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(18, 'edit_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(19, 'edit_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(20, 'edit_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(21, 'edit_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(22, 'edit_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(23, 'read_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(24, 'read_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(25, 'read_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(26, 'read_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(27, 'read_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(28, 'read_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(29, 'read_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(30, 'read_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(31, 'read_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(32, 'read_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(33, 'read_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(34, 'delete_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(35, 'delete_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(36, 'delete_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(37, 'delete_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(38, 'delete_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(39, 'delete_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(40, 'delete_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(41, 'delete_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(42, 'delete_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(43, 'delete_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(44, 'delete_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31');
 
 -- --------------------------------------------------------
 
@@ -349,8 +196,8 @@ CREATE TABLE IF NOT EXISTS `roles` (
 --
 
 INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'super_admin', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32'),
-(2, 'sub_admin', 'admin', '2019-07-12 05:51:32', '2019-07-12 05:51:32');
+(1, 'super_admin', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
+(2, 'sub_admin', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31');
 
 -- --------------------------------------------------------
 
@@ -426,24 +273,14 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `full_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `level` int(11) NOT NULL,
-  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` enum('success','fail') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default.png',
-  `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `users_email_unique` (`email`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `full_name`, `level`, `email`, `status`, `image`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'mahmoud', 6, 'admin@admin.com', 'success', '48380226_2173689489550618_3266547092188823552_n.jpg', '$2y$10$86f.b5DJXqPnlWjTrVujG.5gzUIK4eAu1.jnZ0xmV2V2ooOkMPJU.', NULL, '2019-07-12 05:52:22', '2019-07-12 05:56:00');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

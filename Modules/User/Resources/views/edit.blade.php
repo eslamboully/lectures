@@ -31,11 +31,6 @@
 
                 {!! Form::hidden('id' ,  $user->id ) !!}
 
-              <div class="form-group">
-                {!! Form::label('email' ,  trans('user::user.email') ) !!}
-                {!! Form::email('email' , $user->email , ['class' => 'form-control'] ) !!}
-              </div>
-
                   <div class="form-group">
                     {!! Form::label('phone' ,  trans('user::user.phone')) !!}
                     {!! Form::text('phone' , $user->phone , ['class' => 'form-control'] ) !!}
@@ -44,15 +39,15 @@
                 <div class="form-group">
                     <label>@lang('user::user.level')</label>
                     <select class="form-control" name="level">
-                        <option {{ $user->level == 1 ? 'selected' : '' }} value="1">One</option>
-                        <option {{ $user->level == 2 ? 'selected' : '' }} value="2">Two</option>
-                        <option {{ $user->level == 3 ? 'selected' : '' }} value="3">Three</option>
-                        <option {{ $user->level == 4 ? 'selected' : '' }} value="4">Four</option>
-                        <option {{ $user->level == 5 ? 'selected' : '' }} value="5">Five</option>
-                        <option {{ $user->level == 6 ? 'selected' : '' }} value="6">Six</option>
-                        <option {{ $user->level == 7 ? 'selected' : '' }} value="7">Seven</option>
-                        <option {{ $user->level == 8 ? 'selected' : '' }} value="8">Eight</option>
-                        <option {{ $user->level == 9 ? 'selected' : '' }} value="9">Nine</option>
+                        <option {{ $user->level == 1 ? 'selected' : '' }} value="1">Level 1</option>
+                        <option {{ $user->level == 2 ? 'selected' : '' }} value="2">Level 2</option>
+                        <option {{ $user->level == 3 ? 'selected' : '' }} value="3">Level 3</option>
+                        <option {{ $user->level == 4 ? 'selected' : '' }} value="4">Level 4</option>
+                        <option {{ $user->level == 5 ? 'selected' : '' }} value="5">Level 5</option>
+                        <option {{ $user->level == 6 ? 'selected' : '' }} value="6">Level 6</option>
+                        <option {{ $user->level == 7 ? 'selected' : '' }} value="7">Level 7</option>
+                        <option {{ $user->level == 8 ? 'selected' : '' }} value="8">Level 8</option>
+                        <option {{ $user->level == 9 ? 'selected' : '' }} value="9">Level 9</option>
                     </select>
                 </div>
 
@@ -76,10 +71,6 @@
                 <img id="blah" width="100px" height="100px" class="img-thumbnail" src="{{ asset($user->image) }}" alt="your image" />
               </div>
 
-              <div class="form-group">
-                {!! Form::label('password' ,  trans('user::user.password') ) !!}
-                {!! Form::password('password' , ['class' => 'form-control'] ) !!}
-              </div>
 
               {!! Form::submit( trans('adminpanel::adminpanel.edit') , ['class' => 'btn btn-primary'] ) !!}
               {!! Form::close() !!}
