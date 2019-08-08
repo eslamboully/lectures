@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 24, 2019 at 08:28 PM
+-- Generation Time: Aug 08, 2019 at 09:56 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
 --
 
 INSERT INTO `admins` (`id`, `full_name`, `email`, `image`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Root', 'admin@admin.com', 'default.png', '$2y$10$5f9mWyzHaGwhT97KyVbFw.0RF39y5WhXNC8Lvh/2dg6cEyQfEiT4i', NULL, '2019-07-23 11:50:31', '2019-07-23 11:50:31');
+(1, 'Root', 'admin@admin.com', 'default.png', '$2y$10$DLFMgNWoscCM7OjaV6vV3u2ThTXC99.TYKYE59F/oBLhaNcCFrv.W', NULL, '2019-08-08 16:54:20', '2019-08-08 16:54:20');
 
 -- --------------------------------------------------------
 
@@ -130,50 +130,50 @@ CREATE TABLE IF NOT EXISTS `permissions` (
 --
 
 INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'add_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(2, 'add_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(3, 'add_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(4, 'add_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(5, 'add_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(6, 'add_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(7, 'add_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(8, 'add_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(9, 'add_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(10, 'add_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(11, 'add_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(12, 'edit_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(13, 'edit_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(14, 'edit_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(15, 'edit_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(16, 'edit_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(17, 'edit_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(18, 'edit_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(19, 'edit_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(20, 'edit_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(21, 'edit_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(22, 'edit_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(23, 'read_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(24, 'read_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(25, 'read_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(26, 'read_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(27, 'read_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(28, 'read_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(29, 'read_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(30, 'read_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(31, 'read_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(32, 'read_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(33, 'read_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(34, 'delete_admins', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(35, 'delete_users', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(36, 'delete_levelOne', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(37, 'delete_levelTwo', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(38, 'delete_levelThree', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(39, 'delete_levelFour', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(40, 'delete_levelFive', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(41, 'delete_levelSix', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(42, 'delete_levelSeven', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(43, 'delete_levelEight', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(44, 'delete_levelNine', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31');
+(1, 'add_admins', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(2, 'add_users', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(3, 'add_levelOne', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(4, 'add_levelTwo', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(5, 'add_levelThree', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(6, 'add_levelFour', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(7, 'add_levelFive', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(8, 'add_levelSix', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(9, 'add_levelSeven', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(10, 'add_levelEight', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(11, 'add_levelNine', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(12, 'edit_admins', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(13, 'edit_users', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(14, 'edit_levelOne', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(15, 'edit_levelTwo', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(16, 'edit_levelThree', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(17, 'edit_levelFour', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(18, 'edit_levelFive', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(19, 'edit_levelSix', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(20, 'edit_levelSeven', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(21, 'edit_levelEight', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(22, 'edit_levelNine', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(23, 'read_admins', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(24, 'read_users', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(25, 'read_levelOne', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(26, 'read_levelTwo', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(27, 'read_levelThree', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(28, 'read_levelFour', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(29, 'read_levelFive', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(30, 'read_levelSix', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(31, 'read_levelSeven', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(32, 'read_levelEight', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(33, 'read_levelNine', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(34, 'delete_admins', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(35, 'delete_users', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(36, 'delete_levelOne', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(37, 'delete_levelTwo', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(38, 'delete_levelThree', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(39, 'delete_levelFour', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(40, 'delete_levelFive', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(41, 'delete_levelSix', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(42, 'delete_levelSeven', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(43, 'delete_levelEight', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(44, 'delete_levelNine', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19');
 
 -- --------------------------------------------------------
 
@@ -196,8 +196,8 @@ CREATE TABLE IF NOT EXISTS `roles` (
 --
 
 INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'super_admin', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31'),
-(2, 'sub_admin', 'admin', '2019-07-23 11:50:31', '2019-07-23 11:50:31');
+(1, 'super_admin', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19'),
+(2, 'sub_admin', 'admin', '2019-08-08 16:54:19', '2019-08-08 16:54:19');
 
 -- --------------------------------------------------------
 
@@ -275,12 +275,19 @@ CREATE TABLE IF NOT EXISTS `users` (
   `full_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `phone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `level` int(11) NOT NULL,
-  `status` enum('success','fail') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` enum('success','fail','withdrawal','disconnected','deferred') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default.png',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `full_name`, `phone`, `level`, `status`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'mahmoud', '0121212121', 1, 'withdrawal', 'default.png', '2019-08-08 16:54:23', '2019-08-08 16:54:37');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

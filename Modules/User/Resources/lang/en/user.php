@@ -16,4 +16,7 @@ return [
 	'level' => 'Level',
 	'phone' => 'Phone',
 
+	'withdrawal' => 'Withdrawal ',
+	'disconnected' => 'Disconnected',
+	'deferred' => 'Deferred ',
 ];

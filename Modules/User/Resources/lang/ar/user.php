@@ -17,4 +17,8 @@ return [
 	'level' => 'المستوى',
 	'phone' => 'التليفون',
 
+	'withdrawal' => 'منسحبة ',
+	'disconnected' => 'منقطعة',
+	'deferred' => 'مؤجلة ',
+
 ];

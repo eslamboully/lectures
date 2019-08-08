@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration {
 			$table->string('full_name');
 			$table->string('phone');
 			$table->integer('level');
-			$table->enum('status', ['success', 'fail'])->nullable();
+			$table->enum('status', ['success', 'fail', 'withdrawal', 'disconnected', 'deferred'])->nullable();
 			$table->string('image')->default('default.png');
 			$table->timestamps();
 		});

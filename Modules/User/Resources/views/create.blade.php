@@ -54,6 +54,10 @@
                             <option value=""></option>
                             <option value="fail">@lang('user::user.fail')</option>
                             <option value="success">@lang('user::user.success')</option>
+                            <option value="withdrawal">@lang('user::user.withdrawal')</option>
+                            <option value="disconnected">@lang('user::user.disconnected')</option>
+                            <option value="deferred">@lang('user::user.deferred')</option>
+
                         </select>
                     </div>
 

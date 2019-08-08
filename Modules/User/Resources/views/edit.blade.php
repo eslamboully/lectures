@@ -59,6 +59,10 @@
                         <option {{ $user->status == 'fail' ? 'selected' : '' }} value="fail">@lang('user::user.fail')</option>
                         <option {{ $user->status == 'success' ? 'selected' : '' }}value="success">@lang('user::user.success')</option>
 
+                        <option {{ $user->status == 'withdrawal' ? 'selected' : '' }} value="withdrawal">@lang('user::user.withdrawal')</option>
+                        <option {{ $user->status == 'disconnected' ? 'selected' : '' }} value="disconnected">@lang('user::user.disconnected')</option>
+                        <option {{ $user->status == 'deferred' ? 'selected' : '' }} value="deferred">@lang('user::user.deferred')</option>
+
                     </select>
                 </div>
 
